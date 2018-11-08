@@ -50,11 +50,33 @@ CONCEPTOS:
   
   
 ### Tipos de redes
+
   - Red Local (LAN): Ethernet (IEEE 802.3), WIFI (IEEE 802.11) ... Direcciones MAC
+  
   - Interred IP (Internet). Direcciones IP
-       - Dirección + máscara (CIDR) [<= Clases (A,B,C)]. DHCP.
-       - Conexiones externas a la red local; pasarela (o gateway). Tabla de encaminamiento.
+  
+       - Dirección + máscara (CIDR) [<= Clases (A,B,C)]. DHCP (asignar una configuracion de red a un sistema ).
+       
+       - Conexiones externas a la red local => pasarela (o gateway). Tabla de encaminamiento. En Windows con el comando ```route print```  o en Linux ```route``` imprimie la tabla de encaminamiento
+       
        - Servidor de nombres (DNS)
+       
+
+### Direcciones IP
+   
+   - Tipos :
+        - IPv4 vs IPv6:
+		En IPv6 no se permite trocear un paquete, no se hace checksum. Incluye cifrado por defecto
+        - Clases (obsoleto) A: 1-127, B: 128-191, C: 192-223, (D y E)
+        - Pública vs Privada
+            - Direcciones privadas: 10/8, 172.16/12, 192.168/16
+            - Direcciones especializadas: localhost 127/8, auto-configuration 169.254/16 (la ip que se pone si no se encuentra un servidor DCHP, se auto asigna una)
+   - Opciones:
+        - IP masquerade (enmascarada) - NAT y NAT PT (port translation) => Establecer entre direcciones de red a otras (De publica a privada, de privada a privada, de publica a publica, ...)
+        - Asignación: estática / dinámica (DHCP)
+        - Traducción: DNS (named) / ARP - RARP
+
+
 
 
   

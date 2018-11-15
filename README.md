@@ -79,4 +79,45 @@ CONCEPTOS:
 
 
 
+
+----Parte Alfonso 15/11/2018-----------------------------------------------------------
+
+
+Route nos permite de forma temporal añadir rutas
+netstat -i
+Interfaces | mtu | …
+
+Arp -a
+A que dispostivos a contactado nuestro pc
+nombre-ip-mac-interfaz
+Netstat -tulpan(mostrar tcp-udp-l- Foreign Address-todos-state)
+Traceroute www.bla.com(usa el protocolo icmp)
+Podemos seguir la traza que hacen los paquetes hasta el destino
+
+Comprobando el estado de la red
+ Comandos: netcat y nc
+
+Netcat nos permite establecer conexiones cliente-servidor
+
+Para hacer pruebas puedes usarlo para actuar como servidor “echo”
+
+EN el servidor
+
+Nc -l (la l es para dejar este servidor en escucha) -p(puerto) 2018
+
+ En el cliente
+
+Nc @ip puerto
+Ahora actua como eco si escribes en el cliente sale en el servidor
+
+
+netcat -zv 
+Podemos escanear pùertos de una determinada maquina
+
+Comando nmap
+
+Se usa para escanear la red o parte de ella.
+
+
+
   
